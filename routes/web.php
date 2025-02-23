@@ -13,7 +13,7 @@ Route::get('/city/{name}', function ($name) {
     return "Welcome to {$name}!";
 })->name('city.show');
 
-// 2. Admin prefiksi bilan marshrutlar guruhi
+// 2. 
 Route::prefix('admin')->group(function () {
     Route::get('/users/{id}', function ($id) {
         return "User ID: {$id}";
